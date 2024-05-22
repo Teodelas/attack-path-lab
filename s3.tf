@@ -13,6 +13,7 @@ resource "aws_s3_bucket" "pc-national-bank-bucket" {
   tags = {
     yor_name  = "pc-national-bank-bucket"
     yor_trace = "10b6c69a-a59a-4707-99ca-e38fe004b89a"
+    demo-key  = "demo-value"
   }
 }
 

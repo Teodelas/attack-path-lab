@@ -31,6 +31,7 @@ resource "aws_security_group" "ebilling-ec2-ssh-security-group" {
     Scenario  = "${var.scenario-name}"
     yor_name  = "ebilling-ec2-ssh-security-group"
     yor_trace = "be1849b6-9e91-4e90-b5f1-adb5e13c89cc"
+    demo-key  = "demo-value"
   }
 }
 
@@ -69,5 +70,6 @@ resource "aws_security_group" "ebilling-ec2-http-security-group" {
     Scenario  = "${var.scenario-name}"
     yor_name  = "ebilling-ec2-http-security-group"
     yor_trace = "aa43c032-ae8b-4315-905b-f28ffd5631d1"
+    demo-key  = "demo-value"
   }
 }

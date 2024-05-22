@@ -22,6 +22,7 @@ EOF
     Scenario  = "${var.scenario-name}"
     yor_name  = "ebilling-ec2-role"
     yor_trace = "b629ba47-6bb2-4acd-949c-e34c8e5e9ac5"
+    demo-key  = "demo-value"
   }
 }
 
@@ -86,6 +87,7 @@ POLICY
   tags = {
     yor_name  = "ebilling-ec2-role-policy"
     yor_trace = "f00dcb1b-4636-4de3-a7e3-784ea507190e"
+    demo-key  = "demo-value"
   }
 }
 
@@ -201,6 +203,7 @@ resource "aws_iam_policy" "s3_ap_policy" {
   tags = {
     yor_name  = "s3_ap_policy"
     yor_trace = "f3f6169a-2c42-4482-a660-db2a1efe7381"
+    demo-key  = "demo-value"
   }
 }
 
@@ -230,6 +233,7 @@ resource "aws_iam_instance_profile" "ebilling-ec2-instance-profile" {
   tags = {
     yor_name  = "ebilling-ec2-instance-profile"
     yor_trace = "2e4653fa-623b-4d94-a63e-dd56288b46c1"
+    demo-key  = "demo-value"
   }
 }
 
@@ -240,6 +244,7 @@ resource "aws_key_pair" "ebilling-ec2-key-pair" {
   tags = {
     yor_name  = "ebilling-ec2-key-pair"
     yor_trace = "f4f60644-c526-4882-a1bb-ffa8fb308d02"
+    demo-key  = "demo-value"
   }
 }
 
@@ -314,6 +319,7 @@ resource "aws_instance" "ebilling-ubuntu-ec2" {
     Scenario  = "${var.scenario-name}"
     yor_name  = "ebilling-ubuntu-ec2"
     yor_trace = "b2b8f479-943c-4014-8e5e-6276bf03f8bc"
+    demo-key  = "demo-value"
   }
 }
 

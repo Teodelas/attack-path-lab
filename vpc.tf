@@ -7,6 +7,7 @@ resource "aws_vpc" "ebilling-vpc" {
     Scenario  = "${var.scenario-name}"
     yor_name  = "ebilling-vpc"
     yor_trace = "4c6c539d-e290-4fe0-9abc-d7cfa50c0446"
+    demo-key  = "demo-value"
   }
 }
 #Internet Gateway
@@ -18,6 +19,7 @@ resource "aws_internet_gateway" "ebilling-internet-gateway" {
     Scenario  = "${var.scenario-name}"
     yor_name  = "ebilling-internet-gateway"
     yor_trace = "01e4577f-3a6a-454d-b430-4800c2e77d28"
+    demo-key  = "demo-value"
   }
 }
 #Public Subnets
@@ -31,6 +33,7 @@ resource "aws_subnet" "ebilling-public-subnet-1" {
     Scenario  = "${var.scenario-name}"
     yor_name  = "ebilling-public-subnet-1"
     yor_trace = "2afbce86-6fd2-48e6-a068-8e5b43f6d540"
+    demo-key  = "demo-value"
   }
 }
 resource "aws_subnet" "ebilling-public-subnet-2" {
@@ -43,6 +46,7 @@ resource "aws_subnet" "ebilling-public-subnet-2" {
     Scenario  = "${var.scenario-name}"
     yor_name  = "ebilling-public-subnet-2"
     yor_trace = "8b81895a-5b66-4a28-8629-e7e04b3a0988"
+    demo-key  = "demo-value"
   }
 }
 #Public Subnet Routing Table
@@ -58,6 +62,7 @@ resource "aws_route_table" "ebilling-public-subnet-route-table" {
     Scenario  = "${var.scenario-name}"
     yor_name  = "ebilling-public-subnet-route-table"
     yor_trace = "8042e8fe-97e6-4d57-bc6f-da3247ec3c60"
+    demo-key  = "demo-value"
   }
 }
 #Public Subnets Routing Associations
